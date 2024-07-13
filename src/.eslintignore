@@ -1,0 +1,9 @@
+export default [
+    {
+        ignores: [
+         "public/*",
+         ".vscode",
+         "node_modules"
+       ]
+    }
+];
