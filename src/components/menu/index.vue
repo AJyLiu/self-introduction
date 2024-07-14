@@ -13,20 +13,23 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { ref, defineEmits } from 'vue';
+
+  const emit = defineEmits(['menu-click']);
 
   const menuList = ref([
     '首页',
+    '关于我',
     '工作经历',
     '项目经历',
     '学习经历',
-    '专业技能',
-    '自我评价'
+    '专业技能'
   ]);
   const activeIndex = ref<number>(0);
 
   const handleClick = (index: number) => {
     activeIndex.value = index;
+    emit('menu-click', index);
   };
 </script>
 
@@ -52,7 +55,7 @@
       width: 100%;
       left: 0;
       bottom: -12px;
-      border-bottom: 4px solid #2785ff;
+      border-bottom: 4px solid @active-color;
       animation: menuin 0.6s ease;
     }
   }

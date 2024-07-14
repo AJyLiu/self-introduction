@@ -6,16 +6,16 @@ const router = createRouter({
     {
       path: '/',
       name: 'Index',
-      redirect: '/home'
+      redirect: '/main'
     },
     {
-      path: '/home',
-      name: 'Home',
-      component: () => import('@/views/home/index.vue')
+      path: '/index',
+      name: 'Index',
+      component: () => import('@/views/main/index.vue')
     },
     {
       path: '/:pathMatch(.*)*',
-      redirect: '/home'
+      redirect: '/index'
     }
   ]
 });

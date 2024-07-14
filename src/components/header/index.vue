@@ -1,32 +1,24 @@
 <template>
-  <header class="header">
+  <header class="header fadeIn">
     <div class="header-left">
       <img :src="logoSrc" class="header-logo" alt="logo" />
       <text>JyLiu</text>
     </div>
     <div class="header-right">
-      <Menu />
-      <a
-        class="btn"
-        :class="{ unHover: isUnhover }"
-        @mouseenter="isUnhover = false"
-        @mouseleave="handleMouseleave"
-      >
-        Sign in
-      </a>
+      <Menu @menu-click="menuClick" />
+      <a class="btn"> Sign in </a>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { defineEmits } from 'vue';
   import logo from '@/assets/images/logo.png';
 
+  const emit = defineEmits(['menu-click']);
   const logoSrc = logo;
-  const isUnhover = ref<boolean>(false);
-
-  const handleMouseleave = () => {
-    isUnhover.value = true;
+  const menuClick = (index: number) => {
+    emit('menu-click', index);
   };
 </script>
 
@@ -51,7 +43,6 @@
         font-size: 28px;
         margin-left: 12px;
         font-weight: 700;
-        color: @active-color;
       }
     }
     .header-right {
@@ -66,7 +57,7 @@
         position: relative;
         background-color: transparent;
       }
-      .btn:before {
+      .btn::before {
         position: absolute;
         top: 0;
         left: 50%;
@@ -74,21 +65,23 @@
         bottom: 0;
         opacity: 0;
         content: '';
-        background-color: @active-color;
+        background-color: @prominent-color;
         border-radius: 5px;
         z-index: -1;
-      }
-      .unHover:before {
-        animation: hoverleave 0.5s ease;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
       }
       .btn:hover {
-        color: #ffffff;
+        border: 1px solid @prominent-color;
+        background-color: transparent;
+        z-index: 1;
       }
-      .btn:hover:before {
-        left: 0;
+      .btn:hover::before {
         right: 0;
+        left: 0;
         opacity: 1;
-        animation: expand 0.5s ease;
+        z-index: -1;
+        background-color: @prominent-color;
       }
     }
   }
