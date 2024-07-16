@@ -1,5 +1,5 @@
 <template>
-  <section class="about-me wow fadeIn">
+  <section class="about-me">
     <div class="img-box wow slideInLeft">
       <img :src="aboutMe" class="about-me-img" alt="aboutMe" />
     </div>
@@ -148,6 +148,11 @@
     }
     :deep(.el-form-item__label) {
       color: #000;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1320px) {
+    .about-me {
+      padding: 80px 20px;
     }
   }
 </style>

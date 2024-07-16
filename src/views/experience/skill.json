@@ -1,0 +1,225 @@
+[{
+	"name": "Vue2/3",
+	"category": "skill",
+	"textSize": 24,
+	"data": null,
+	"status": "proficiency",
+	"percent": 90,
+	"detail": "拥有5年+使用经验、8~9个项目经验；理解其核心机制如数据绑定、deff算法、组件系统、虚拟DOM、插件机制、Vue3中的Composition API、Fragment、Teleport、hooks等、熟练使用其周边生态如vueX、pina、vue-router、axios、vite等。"
+}, {
+	"name": "HTML/HTML5",
+	"category": "skill",
+	"textSize": 15,
+	"data": null,
+	"status": "proficiency",
+	"percent": 85,
+	"detail": "熟练运用H5中语义化标签编写遵守语义化规范的静态页面。"
+}, {
+	"name": "CSS/CSS3",
+	"category": "skill",
+	"textSize": 12,
+	"data": null,
+	"status": "proficiency",
+	"percent": 85,
+	"detail": "能熟练使用css3中新特性如选择器、盒模型、过渡和动画、媒体查询、弹性盒子布局、网格布局(Grid)，多列布局等"
+}, {
+	"name": "TypeScprit",
+	"category": "skill",
+	"textSize": 19,
+	"data": null,
+	"status": "skilled",
+	"percent": 80,
+	"detail": "拥有4年+使用经验、3~6个项目经验；能熟练运用于各个项目中，用其强大的类型系统提高代码的健壮性和可靠性，使代码更加结构化和可维护。"
+}, {
+	"name": "ES6",
+	"category": "skill",
+	"textSize": 16,
+	"data": null,
+	"status": "proficiency",
+	"percent": 85,
+	"detail": "拥有6年+使用经验、10+个项目经验；能灵活运用其语法特性，诸如块级作用域、箭头函数、解构赋值、Class类、Promise、模块化、Set和Map等。"
+}, {
+	"name": "Hooks",
+	"category": "",
+	"textSize": 17,
+	"data": null,
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Echarts",
+	"category": "skill",
+	"textSize": 15,
+	"data": null,
+	"status": "skilled",
+	"percent": 80,
+	"detail": "拥有7年+使用经验、10+个项目经验；几乎每个项目都涉及图标显示以及对图表的操作，能将其熟练运用各个系统中，将数据图形化凸显各项指标的同时增加用户体验。"
+}, {
+	"name": "Less",
+	"category": "skill",
+	"textSize": 19,
+	"data": null,
+	"status": "skilled",
+	"percent": 80,
+	"detail": "拥有6年+使用经验、8~9+个项目经验；能熟练运用其变量、嵌套、Mixins、操作符和导入/扩展等操作"
+}, {
+	"name": "jQuery",
+	"category": "skill",
+	"textSize": 12,
+	"data": null,
+	"status": "skilled",
+	"percent": 75,
+	"detail": "近几年使用较少，只在老项目中涉及，能熟练运用其对DOM进行操作，以及它的事件函数等。"
+}, {
+	"name": "Uni-app",
+	"textSize": 8,
+	"category": "skill",
+	"data": null,
+	"status": "understand",
+	"percent": 50,
+	"detail": "了解Uni-app使用方式，能快速上手"
+}, {
+	"name": "Angular",
+	"category": "skill",
+	"textSize": 8,
+	"data": null,
+	"status": "understand",
+	"percent": 40,
+	"detail": "有1~2年使用经验，有2~3个项目经验，曾使用angular1/4版本，将angular1项目重构升级为angular4，现能快速在angular项目中实现页面功能以及交互逻辑。"
+}, {
+	"name": "JavaScript",
+	"textSize": 16,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Pina",
+	"textSize": 15,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Vuex",
+	"textSize": 16,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Vue-router",
+	"textSize": 14,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Vite",
+	"textSize": 15,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Webpack",
+	"textSize": 12,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Ant-design",
+	"textSize": 13,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Git",
+	"textSize": 12,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "ElementUi",
+	"textSize": 12,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "BootStrap",
+	"textSize": 12,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "ArcGis",
+	"textSize": 7,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Axios",
+	"textSize": 13,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "组件化",
+	"textSize": 11,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "性能优化",
+	"textSize": 11,
+	"data": null,
+	"category": "",
+	"status": "",
+	"percent": "",
+	"detail": ""
+}, {
+	"name": "Java",
+	"textSize": 11,
+	"data": null,
+	"category": "skill",
+	"status": "understand",
+	"percent": 20,
+	"detail": "学习软件工程专业，就业后从事前端工作，了解Java、Mysql等后端技术的一些简单操作。"
+}, {
+	"name": "构建工具",
+	"textSize": 11,
+	"data": null,
+	"category": "skill",
+	"status": "skilled",
+	"percent": 78,
+	"detail": "熟练使用常用构建工具webpack，vite，代码管理工具 Git。"
+}, {
+	"name": "Ui组件库",
+	"textSize": 11,
+	"data": null,
+	"category": "skill",
+	"status": "skilled",
+	"percent": 78,
+	"detail": "熟练使用常用UI组件库能对其进行二次封装，如ant-design、elementUI、bootStrap等。"
+}]

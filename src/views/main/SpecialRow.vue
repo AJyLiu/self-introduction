@@ -49,4 +49,9 @@
     height: 140px;
     padding: 110px 20% 50px 20%;
   }
+  @media screen and (min-width: 992px) and (max-width: 1320px) {
+    .special-row {
+        padding: 110px 0 50px 0;
+    }
+  }
 </style>

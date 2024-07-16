@@ -13,10 +13,13 @@ declare module 'vue' {
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElProgress: typeof import('element-plus/es')['ElProgress']
     ElRow: typeof import('element-plus/es')['ElRow']
+    ExperienceItem: typeof import('./src/components/experienceItem/index.vue')['default']
     Header: typeof import('./src/components/header/index.vue')['default']
     Menu: typeof import('./src/components/menu/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SkillItem: typeof import('./src/components/skillItem/index.vue')['default']
   }
 }

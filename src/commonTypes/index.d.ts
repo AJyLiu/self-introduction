@@ -1,2 +1,3 @@
 export * from './images.d.ts';
-export * from './components.d.ts';
+export * from './commonTypes.d.ts';
+export * from './skill.d.ts';
