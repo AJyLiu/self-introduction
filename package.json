@@ -13,8 +13,11 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@vueuse/core": "^10.11.0",
+    "animate.css": "^4.1.1",
     "element-plus": "^2.7.7",
     "less": "^4.2.0",
+    "swiper": "^11.1.4",
     "vue": "^3.4.29",
     "vue-router": "^4.4.0"
   },

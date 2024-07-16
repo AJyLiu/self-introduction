@@ -2,7 +2,7 @@
   <header class="header fadeIn">
     <div class="header-left">
       <img :src="logoSrc" class="header-logo" alt="logo" />
-      <text>JyLiu</text>
+      <text class="logo-text">JyLiu</text>
     </div>
     <div class="header-right">
       <Menu @menu-click="menuClick" />
@@ -107,6 +107,28 @@
       opacity: 0;
       left: 50%;
       right: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 0 10px;
+    }
+    .btn {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .header {
+      padding: 0 10px;
+    }
+    .btn {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .btn {
+      display: none;
     }
   }
 </style>
