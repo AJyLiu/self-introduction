@@ -46,30 +46,20 @@
 <style scoped lang="less">
   .digital-card {
     border: 1px solid @prominent-color;
-    border-radius: 8px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px;
-    margin: 0 20px;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
+    border-radius: 0.4rem;
+    padding: 2rem 2.5rem;
+    margin: 0.8rem;
     .digital {
-      margin-bottom: 20px;
+      margin-bottom: 0.6rem;
       color: @titleColor;
       display: flex;
       align-items: baseline;
       .num {
-        font-size: 28px;
+        font-size: 2rem;
         font-weight: 700;
       }
       .unit {
-        font-size: 12px;
+        font-size: 0.8rem;
       }
     }
     .desc {

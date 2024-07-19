@@ -1,10 +1,10 @@
 <template>
-  <section class="about-me">
-    <div class="img-box wow slideInLeft">
+  <section class="mian-container about-me">
+    <div class="img-box wow fadeInLeft">
       <img :src="aboutMe" class="about-me-img" alt="aboutMe" />
     </div>
     <div class="text-box">
-      <div class="wow slideInDown">
+      <div class="wow fadeInDown">
         <h1 class="title">About Me</h1>
         <p class="about-item">
           为人诚恳、乐观向上、拥有较强的组织能力和适应能力,
@@ -18,12 +18,11 @@
           有丰富的模块化、组件化、hooks使用经验；
           有ToB、ToC，大屏数据可视化、电子流等项目经验，同时了解小程序开发模式，能迅速上手开发；
           对易用性和用户体验有自己的经验积累，在项目中对易用性和用户体验进行整改后，用户满意度提升20%；
-          有丰富的项目经验，如医疗、金融、学习培训、外贸、国际化项目等；
           了解Java，MySQL等后端技术，曾有后端开发经验；
         </p>
       </div>
-      <div class="wow slideInUp">
-        <h1 class="title basic-info">Basic Info</h1>
+      <div class="basic-info wow fadeInUp">
+        <h1 class="title basic-info-title">Basic Info</h1>
         <ElForm :model="formData" label-width="120px">
           <el-row :gutter="20">
             <el-col :span="12">
@@ -93,6 +92,8 @@
             </el-col>
           </el-row>
         </ElForm>
+
+        <img class="wx-mini-program wow fadeInRight" :src="wxMiniProgram" alt="wx-mini-program">
       </div>
     </div>
   </section>
@@ -100,6 +101,7 @@
 <script setup lang="ts">
   import { ref } from 'vue';
   import aboutMe from '@/assets/images/aboutMe.jpg';
+  import wxMiniProgram from '@/assets/images/wx-mini-program.jpg';
 
   const formData = ref({
     birthDay: '1993-01-03',
@@ -111,7 +113,6 @@
   .about-me {
     display: flex;
     justify-content: center;
-    padding: 80px 20%;
     box-sizing: border-box;
     .img-box {
       width: 300px;
@@ -142,6 +143,17 @@
         padding-bottom: 20px;
       }
       .basic-info {
+        position: relative;
+        .wx-mini-program {
+            position: absolute;
+            bottom: -8rem;
+            right: 0;
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+      }
+      .basic-info-title {
         border-top: 1px solid #cccccc;
         padding-top: 20px;
       }

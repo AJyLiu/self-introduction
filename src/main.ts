@@ -5,6 +5,7 @@ import router from './router'; // 注册路由
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import 'swiper/css';
 import 'element-plus/dist/index.css';
+import 'element-plus/theme-chalk/display.css';
 import '@/assets/style/global.less';
 
 import 'animate.css';

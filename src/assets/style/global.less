@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -18,9 +18,44 @@ ul li, menu li {
     text-overflow: ellipsis;
 }
 
+.ellipsis-multiline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mian-container {
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
 @active-color: #2785ff;
 @main-color: #1C3F39;
 @prominent-color: #C9F31D;
 @titleColor: #222222;
 @textColor: #666666;
 @descColor: #555555;
+@borderColor: #d8d7d7;
+
+@media screen and (max-width: 768px) {
+    .mian-container {
+        max-width: 540px;    
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+   .mian-container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .mian-container {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .mian-container {
+        max-width: 1200px;
+    }
+}

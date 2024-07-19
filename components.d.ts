@@ -18,6 +18,7 @@ declare module 'vue' {
     ExperienceItem: typeof import('./src/components/experienceItem/index.vue')['default']
     Header: typeof import('./src/components/header/index.vue')['default']
     Menu: typeof import('./src/components/menu/index.vue')['default']
+    ProjectCard: typeof import('./src/components/projectCard/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SkillItem: typeof import('./src/components/skillItem/index.vue')['default']

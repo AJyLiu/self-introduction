@@ -1,10 +1,11 @@
 <template>
-  <section class="special-row">
-    <DigitalCard
-      v-for="item in rowDataList"
-      :key="item.id"
-      :card-data="item"
-    ></DigitalCard>
+  <section class="mian-container special-row">
+    <ElRow :span="24">
+        <ElCol :xs="24" :sm="12" :md="8" :lg="6" :xl="6" v-for="item in rowDataList" :key="item.id">
+            <DigitalCard :card-data="item"></DigitalCard>
+        </ElCol>
+    </ElRow>
+    
   </section>
 </template>
 
@@ -44,14 +45,9 @@
 
 <style scoped lang="less">
   .special-row {
-    display: flex;
-    justify-content: space-between;
-    height: 140px;
-    padding: 110px 20% 50px 20%;
+    margin-top: 5rem;
   }
   @media screen and (min-width: 992px) and (max-width: 1320px) {
-    .special-row {
-        padding: 110px 0 50px 0;
-    }
+    
   }
 </style>

@@ -24,10 +24,11 @@ defineProps<{
     margin-top: 30px;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
-    padding: 30px 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 7rem;
     .number-box {
         width: 50px;
         height: 50px;

@@ -1,5 +1,5 @@
 <template>
-    <section class="experience-box">
+    <section class="mian-container experience-box">
         <div class="item-box experience">
             <h1 class="title">工作经历</h1>
             <ExperienceItem v-for="(item, index) in experienceList" :key="item.id" :num="index + 1" :experience-data="item"></ExperienceItem>
@@ -25,7 +25,7 @@ const skillList = ref<SkillInfoVo[]>(skillData.slice(0, 5))
 <style scoped lang="less">
 .experience-box {
     display: flex;
-    padding: 80px 20%;
+    margin-bottom: 5rem;
     .item-box {
         width: 50%;
         .title {
