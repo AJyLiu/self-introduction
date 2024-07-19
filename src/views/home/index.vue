@@ -2,7 +2,7 @@
   <section class="container wow fadeIn">
     <div class="container-text">
       <div class="text-content">
-        <div class="text-item name wow fadeInUp">你好我是刘俊遥!</div>
+        <div class="text-item name wow fadeInUp">你好我是刘先生!</div>
         <div class="text-item job wow fadeInDown">
           一个前端开发<span class="job prominent">工程师</span>
         </div>
@@ -28,10 +28,10 @@
 <style scoped lang="less">
   .container {
     display: flex;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     overflow: hidden;
-    height: calc(100vh - 110px);
-    margin-bottom: 10px;
+    height: 49rem;
+    margin-bottom: 0.9rem;
     box-sizing: border-box;
     .container-text {
       flex: 1;
@@ -43,26 +43,26 @@
       .text-content {
         width: 50%;
         .text-item {
-          margin-bottom: 25px;
+          margin-bottom: 2rem;
         }
         .name {
-          font-size: 28px;
+          font-size: 1.7rem;
         }
         .job {
-          font-size: 34px;
+          font-size: 2.2rem;
         }
         .desc {
-          font-size: 12px;
-          margin-bottom: 45px;
+          font-size: 1rem;
+          margin-bottom: 3rem;
         }
         .prominent {
           color: @prominent-color;
         }
       }
       .yellow_btn {
-        font-size: 16px;
-        padding: 10px 38px;
-        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0.9rem 3rem;
+        border-radius: 0.4rem;
         color: #222;
         position: relative;
         background-color: @prominent-color;
@@ -85,7 +85,7 @@
         right: 50%;
         left: 50%;
         opacity: 0;
-        border-radius: 5px;
+        border-radius: 0.3rem;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         background-color: #ffffff;
@@ -99,7 +99,7 @@
       }
     }
     .container-img {
-      width: 600px;
+      width: 40rem;
       .photo {
         width: 100%;
         height: 100%;
@@ -108,24 +108,9 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     .container-img {
       display: none;
-    }
-  }
-  @media screen and (min-width: 769px) and (max-width: 991px) {
-    .container-img {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .container-img {
-      width: 500px !important;
-    }
-  }
-  @media screen and (min-width: 1920px) {
-    .container-img {
-      width: 800px !important;
     }
   }
 </style>

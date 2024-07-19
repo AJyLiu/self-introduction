@@ -93,7 +93,11 @@
           </el-row>
         </ElForm>
 
-        <img class="wx-mini-program wow fadeInRight" :src="wxMiniProgram" alt="wx-mini-program">
+        <img
+          class="wx-mini-program wow fadeInRight"
+          :src="wxMiniProgram"
+          alt="wx-mini-program"
+        />
       </div>
     </div>
   </section>
@@ -145,12 +149,12 @@
       .basic-info {
         position: relative;
         .wx-mini-program {
-            position: absolute;
-            bottom: -8rem;
-            right: 0;
-            width: 10rem;
-            height: 10rem;
-            object-fit: cover;
+          position: absolute;
+          bottom: -8rem;
+          right: 0;
+          width: 10rem;
+          height: 10rem;
+          object-fit: cover;
         }
       }
       .basic-info-title {

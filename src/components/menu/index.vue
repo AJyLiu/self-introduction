@@ -1,7 +1,7 @@
 <template>
   <Expand
     class="icon-menu"
-    style="width: 26px; height: 26px"
+    style="width: 1.8rem; height: 1.8rem"
     @click="openMenu"
   />
   <menu class="menu">
@@ -18,7 +18,7 @@
   <div v-if="isShowMenu" class="phone-menu">
     <div class="phone-menu-close">
       <Close
-        style="width: 26px; height: 26px; color: #c9f31d"
+        style="width: 1.8rem; height: 1.8rem; color: #c9f31d"
         @click="closeMenu"
       />
     </div>
@@ -76,9 +76,9 @@
   .menu {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     .menu-item {
-      margin: 0 14px;
+      margin: 0 0.8rem;
       cursor: pointer;
       position: relative;
     }
@@ -93,7 +93,7 @@
       position: absolute;
       width: 100%;
       left: 0;
-      bottom: -12px;
+      bottom: -0.8rem;
       border-bottom: 4px solid @active-color;
       animation: menuin 0.6s ease;
     }
@@ -108,15 +108,15 @@
     background-color: #00000088;
     z-index: 99999;
     .phone-menu-close {
-      padding: 20px 20px;
+      padding: 1.3rem;
       text-align: right;
       background-color: black;
     }
     .phone-menu-item {
-      padding: 10px 20px;
+      padding: 0.8rem 1.3rem;
       .menu-item {
-        padding: 15px 20px;
-        font-size: 16px;
+        padding: 1rem 1.3rem;
+        font-size: 1rem;
         color: #fff;
         border-bottom: 1px solid #cccccc9d;
       }

@@ -24,24 +24,24 @@
 
 <style scoped lang="less">
   .header {
-    height: 100px;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 5rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     .header-left {
       display: flex;
       align-items: center;
       .header-logo {
-        width: 40px;
-        height: 40px;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
       }
       text {
-        font-size: 28px;
-        margin-left: 12px;
+        font-size: 2rem;
+        margin-left: 0.8rem;
         font-weight: 700;
       }
     }
@@ -49,9 +49,9 @@
       display: flex;
       .btn {
         border: 1px solid #1c3f39;
-        padding: 14px 40px;
+        padding: 1rem 3rem;
         border-radius: 5px;
-        margin-left: 120px;
+        margin-left: 6rem;
         cursor: pointer;
         transition: 0.5s;
         position: relative;
@@ -109,16 +109,7 @@
       right: 50%;
     }
   }
-
-  @media screen and (max-width: 768px) {
-    .header {
-      padding: 0 10px;
-    }
-    .btn {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 769px) and (max-width: 991px) {
+  @media screen and (max-width: 991px) {
     .header {
       padding: 0 10px;
     }

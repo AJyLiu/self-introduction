@@ -7,10 +7,10 @@ export type DigitalCardType = {
 };
 
 export interface ExperienceVo {
-	id: string;
-	title: string;
-	position: string;
-	startTime: string;
-	endTime: string;
-	content: string | string[];
+  id: string;
+  title: string;
+  position: string;
+  startTime: string;
+  endTime: string;
+  content: string | string[];
 }

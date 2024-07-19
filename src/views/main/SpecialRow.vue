@@ -1,11 +1,18 @@
 <template>
   <section class="mian-container special-row">
     <ElRow :span="24">
-        <ElCol :xs="24" :sm="12" :md="8" :lg="6" :xl="6" v-for="item in rowDataList" :key="item.id">
-            <DigitalCard :card-data="item"></DigitalCard>
-        </ElCol>
+      <ElCol
+        :xs="24"
+        :sm="12"
+        :md="12"
+        :lg="6"
+        :xl="6"
+        v-for="item in rowDataList"
+        :key="item.id"
+      >
+        <DigitalCard :card-data="item"></DigitalCard>
+      </ElCol>
     </ElRow>
-    
   </section>
 </template>
 
@@ -21,7 +28,7 @@
     },
     {
       id: '2',
-      num: 90.0,
+      num: 94.35,
       unit: '%',
       desc: '满意度',
       fixed: 2
@@ -48,6 +55,5 @@
     margin-top: 5rem;
   }
   @media screen and (min-width: 992px) and (max-width: 1320px) {
-    
   }
 </style>
