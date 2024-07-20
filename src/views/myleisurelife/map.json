@@ -1,0 +1,112 @@
+[
+    {
+        "name": "成都",
+        "value": [
+            104.071216,
+            30.576279
+        ],
+        "itemStyle": {
+            "color": "#A6283F"
+        }
+    },
+    {
+        "name": "泸沽湖",
+        "value": [
+            100.771491,
+            27.676921
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "广东",
+        "value": [
+            113.266887,
+            23.133306
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "洱海",
+        "value": [
+            100.192566,
+            25.901059
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "拉萨",
+        "value": [
+            91.171951,
+            29.653456
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "大雁塔",
+        "value": [
+            108.96588,
+            34.225479
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "三亚",
+        "value": [
+            109.512004,
+            18.252992
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "西昌",
+        "value": [
+            102.265,
+            27.8945
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "重庆",
+        "value": [
+            106.578953,
+            29.562165
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "攀枝花",
+        "value": [
+            101.719,
+            26.582199
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    },
+    {
+        "name": "若尔盖",
+        "value": [
+            102.968000,
+            33.578100
+        ],
+        "itemStyle": {
+            "color": "#00EEFF"
+        }
+    }
+]

@@ -4,3 +4,4 @@ export * from './skill.d.ts';
 export * from './project.d.ts';
 export * from './echarts.d.ts';
 export * from './service.d.ts';
+export * from './map.d.ts';

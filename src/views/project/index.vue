@@ -29,15 +29,16 @@
     .project-title {
       display: block;
       text-align: center;
-      font-size: 1rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .project-title-desc {
-      width: 800px;
+      width: 30rem;
       text-align: center;
       margin: 0 auto;
       margin-bottom: 3rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      font-weight: 100;
     }
   }
 </style>

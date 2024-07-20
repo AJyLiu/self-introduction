@@ -37,7 +37,7 @@ const handleAnimation = (index: number): string => {
         }
         h5 {
             font-weight: 100;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
     }
     .service-list {
