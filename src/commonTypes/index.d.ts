@@ -3,3 +3,4 @@ export * from './commonTypes.d.ts';
 export * from './skill.d.ts';
 export * from './project.d.ts';
 export * from './echarts.d.ts';
+export * from './service.d.ts';

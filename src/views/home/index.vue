@@ -33,6 +33,7 @@
     height: 49rem;
     margin-bottom: 0.9rem;
     box-sizing: border-box;
+    margin: 0 1.5rem;
     .container-text {
       flex: 1;
       background-color: @main-color;

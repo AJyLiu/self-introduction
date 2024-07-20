@@ -1,30 +1,34 @@
 <template>
-  <section class="mian-container experience-box">
-    <div class="item-box experience">
-      <h1 class="title">工作经历</h1>
-      <ExperienceItem
-        v-for="(item, index) in experienceList"
-        :key="item.id"
-        :num="index + 1"
-        :experience-data="item"
-      ></ExperienceItem>
-    </div>
-    <div class="item-box skills">
-      <h1 class="title">专业技能</h1>
-      <SkillItem
-        v-for="item in skillList"
-        :key="item.name"
-        :skill-data="item"
-      ></SkillItem>
+  <section class="layout-bg">
+    <div class="mian-container experience-box">
+      <div class="item-box experience">
+        <h1 class="title wow fadeInUp">工作经历</h1>
+        <ExperienceItem
+          v-for="(item, index) in experienceList"
+          :key="item.id"
+          :num="index + 1"
+          :experience-data="item"
+        ></ExperienceItem>
+      </div>
+      <div class="item-box skills">
+        <h1 class="title wow fadeInUp">专业技能</h1>
+        <SkillItem
+          v-for="item in skillList"
+          :key="item.name"
+          :skill-data="item"
+        ></SkillItem>
+      </div>
     </div>
   </section>
-  <section ref="targetRef" class="mian-container chart-container wow fadeInUp">
-    <div id="workChart" style="width: 100%; height: 30rem"></div>
+  <section ref="targetRef" class="layout-bg">
+    <div class="mian-container chart-container wow fadeInUp">
+      <div id="workChart" style="width: 100%; height: 30rem"></div>
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue';
+  import { ref } from 'vue';
   import * as echarts from 'echarts';
   import type { SkillInfoVo } from '@/commonTypes/skill';
   import type { EchartsOption } from '@/commonTypes';
@@ -42,9 +46,9 @@
 
   const xAxis = useGetChartXData();
   let seriesData = ref<string[]>([]);
-  seriesData = useGetWorkYears();
 
   const initEchart = () => {
+  seriesData = useGetWorkYears();
     const chartDom = document.getElementById('workChart');
     const chart = echarts.init(chartDom);
     const options: EchartsOption = {
@@ -97,7 +101,7 @@
               color: '#C9F31D'
             },
             label: {
-              color: '#ffffff'
+              color: '#1C3F39'
             }
           },
           markLine: {
@@ -110,6 +114,9 @@
       ]
     };
     chart.setOption(options);
+    window.addEventListener( 'resize' , function () {
+        chart.resize();
+    })
   };
 
   useIntersectionObserver(
@@ -123,8 +130,6 @@
       threshold: 0
     }
   );
-
-  onMounted(() => {});
 </script>
 
 <style scoped lang="less">

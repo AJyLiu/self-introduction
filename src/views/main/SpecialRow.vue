@@ -1,18 +1,20 @@
 <template>
-  <section class="mian-container special-row">
-    <ElRow :span="24">
-      <ElCol
-        :xs="24"
-        :sm="12"
-        :md="12"
-        :lg="6"
-        :xl="6"
-        v-for="item in rowDataList"
-        :key="item.id"
-      >
-        <DigitalCard :card-data="item"></DigitalCard>
-      </ElCol>
-    </ElRow>
+  <section class="layout-bg">
+    <div class="mian-container special-row">
+      <ElRow :span="24">
+        <ElCol
+          :xs="24"
+          :sm="12"
+          :md="12"
+          :lg="6"
+          :xl="6"
+          v-for="item in rowDataList"
+          :key="item.id"
+        >
+          <DigitalCard :card-data="item"></DigitalCard>
+        </ElCol>
+      </ElRow>
+    </div>
   </section>
 </template>
 
@@ -53,7 +55,6 @@
 <style scoped lang="less">
   .special-row {
     margin-top: 5rem;
-  }
-  @media screen and (min-width: 992px) and (max-width: 1320px) {
+    width: 100%;
   }
 </style>

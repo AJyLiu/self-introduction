@@ -4,7 +4,7 @@
       <img :src="aboutMe" class="about-me-img" alt="aboutMe" />
     </div>
     <div class="text-box">
-      <div class="wow fadeInDown">
+      <div class="wow fadeInUp">
         <h1 class="title">About Me</h1>
         <p class="about-item">
           为人诚恳、乐观向上、拥有较强的组织能力和适应能力,
@@ -33,18 +33,6 @@
             <el-col :span="12">
               <el-form-item label="电话号码：">
                 <span>18008044071</span>
-              </el-form-item>
-            </el-col>
-          </el-row>
-          <el-row :gutter="20">
-            <el-col :span="12">
-              <el-form-item label="名族：">
-                <span>汉</span>
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item label="婚姻状况：">
-                <span>已婚</span>
               </el-form-item>
             </el-col>
           </el-row>

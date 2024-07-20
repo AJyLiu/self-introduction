@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-item">
+  <div class="experience-item wow fadeInUp">
     <div class="number-box">{{ num < 10 ? `0${num}` : num }}</div>
     <div class="text-box">
       <h4 class="title ellipsis">{{ experienceData.title }}</h4>

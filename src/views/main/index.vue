@@ -5,6 +5,7 @@
   <About id="about"></About>
   <Experience id="experience"></Experience>
   <Project id="project"></Project>
+  <JobScope></JobScope>
 </template>
 <script setup lang="ts">
   import { ref } from 'vue';
@@ -13,6 +14,7 @@
   import Experience from '@/views/experience/index.vue';
   import Project from '@/views/project/index.vue';
   import SpecialRow from './SpecialRow.vue';
+  import JobScope from '@/views/jobScope/index.vue';
 
   const ids = ref(['home', 'about', 'experience', 'project']);
   const menuClick = (index: number) => {

@@ -1,5 +1,5 @@
 <template>
-  <div ref="targetRef" class="experience-item wow fadeIn">
+  <div ref="targetRef" class="experience-item wow fadeInUp">
     <div class="progress-title">
       <h5>{{ skillData.name }}</h5>
       <span>{{ `${skillData.percent}%` }}</span>

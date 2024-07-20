@@ -1,11 +1,16 @@
+@active-color: #2785ff;
+@main-color: #1C3F39;
+@prominent-color: #C9F31D;
+@titleColor: #222222;
+@textColor: #666666;
+@descColor: #555555;
+@borderColor: #d8d7d7;
+@bgColor: #F6F7FD;
+
 * {
     padding: 0;
     margin: 0;
     font-size: 16px;
-}
-
-body {
-    padding: 0 20px;
 }
 
 ul li, menu li {
@@ -26,18 +31,17 @@ ul li, menu li {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.layout {
+    padding: 0 1.5rem;
+}
+.layout-bg {
+    padding: 0 1.5rem;
+    background-color: @bgColor;
+}
 .mian-container {
     margin: 0 auto;
     padding: 5rem 0;
 }
-
-@active-color: #2785ff;
-@main-color: #1C3F39;
-@prominent-color: #C9F31D;
-@titleColor: #222222;
-@textColor: #666666;
-@descColor: #555555;
-@borderColor: #d8d7d7;
 
 @media screen and (max-width: 768px) {
     .mian-container {
