@@ -12,7 +12,6 @@
         <ProjectCard :projectDataList="projectList"></ProjectCard>
       </div>
     </div>
-    
   </section>
 </template>
 

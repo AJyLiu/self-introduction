@@ -2,10 +2,11 @@
   <section class="layout-bg">
     <div class="header-box wow fadeInUp">
       <h1>我的经历</h1>
-      <h5>打撒啊啊啊啊啊啊啊啊啊啊啊啊啊啊第三方的点点滴滴滴答滴答哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒</h5>
+      <h5>
+        打撒啊啊啊啊啊啊啊啊啊啊啊啊啊啊第三方的点点滴滴滴答滴答哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒
+      </h5>
     </div>
     <div class="mian-container experience-box">
-    
       <div class="item-box experience">
         <h1 class="title wow fadeInUp">工作经历</h1>
         <ExperienceItem
@@ -53,7 +54,7 @@
   let seriesData = ref<string[]>([]);
 
   const initEchart = () => {
-  seriesData = useGetWorkYears();
+    seriesData = useGetWorkYears();
     const chartDom = document.getElementById('workChart');
     const chart = echarts.init(chartDom);
     const options: EchartsOption = {
@@ -119,9 +120,9 @@
       ]
     };
     chart.setOption(options);
-    window.addEventListener( 'resize' , function () {
-        chart.resize();
-    })
+    window.addEventListener('resize', function () {
+      chart.resize();
+    });
   };
 
   useIntersectionObserver(
@@ -138,19 +139,19 @@
 </script>
 
 <style scoped lang="less">
-.header-box {
+  .header-box {
     width: 30rem;
     text-align: center;
     margin: 0 auto;
     padding-top: 5rem;
     h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
     h5 {
-        font-weight: 100;
-        margin-top: 1rem;
+      font-weight: 100;
+      margin-top: 1rem;
     }
-}
+  }
   .experience-box {
     display: flex;
     .item-box {
