@@ -4,7 +4,7 @@
       <div class="header-box wow fadeInUp">
         <h1>服务</h1>
         <h5>
-          打撒啊啊啊啊啊啊啊啊啊啊啊啊啊啊第三方的点点滴滴滴答滴答哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒
+          主要涉及三大模块开发，web端toC、toB项目，H5页面开发，小程序应用开发
         </h5>
       </div>
       <div class="service-list">

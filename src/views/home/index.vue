@@ -10,7 +10,7 @@
           喜欢钓鱼，爱好羽毛球，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，爱倒腾的前端选手
         </div>
         <div class="wow fadeInLeft">
-          <a class="yellow_btn">下载简历</a>
+          <a :href="cvUrl" class="yellow_btn" target="_blank">下载简历</a>
         </div>
       </div>
     </div>
@@ -22,6 +22,7 @@
 <script setup lang="ts">
   import photoSrc from '@/assets/images/photo.jpg';
 
+  const cvUrl = new URL('@/assets/curriculumVitae.pdf', import.meta.url).href;
   const photo = photoSrc;
 </script>
 
@@ -70,6 +71,7 @@
         border: 1px solid @prominent-color;
         transition: all 0.5s;
         cursor: pointer;
+        text-decoration: none;
       }
       .yellow_btn:hover {
         border: 1px solid #ffffff;

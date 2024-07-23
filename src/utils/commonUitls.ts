@@ -43,3 +43,16 @@ export const handleEmailHide = (email: string): string => {
 
   return `${emailStart}***@${emailEnd}`; // 输出为11223***@qq.com
 };
+
+// 防抖
+export const debounce = (fn: Function, delay: number) => {
+  let timeoutId: number | null = null;
+  return function (...args: any) {
+    if (timeoutId !== null) {
+      clearTimeout(timeoutId);
+    }
+    timeoutId = window.setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+};

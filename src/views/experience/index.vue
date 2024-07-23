@@ -3,7 +3,7 @@
     <div class="header-box wow fadeInUp">
       <h1>我的经历</h1>
       <h5>
-        打撒啊啊啊啊啊啊啊啊啊啊啊啊啊啊第三方的点点滴滴滴答滴答哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒
+        工作经历丰富，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，技术面涉及广泛
       </h5>
     </div>
     <div class="mian-container experience-box">

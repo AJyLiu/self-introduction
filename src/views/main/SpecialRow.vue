@@ -44,7 +44,7 @@
     },
     {
       id: '4',
-      num: 7.9,
+      num: 8,
       unit: '年',
       desc: '工作年限',
       fixed: 1

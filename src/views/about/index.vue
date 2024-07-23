@@ -12,13 +12,9 @@
           对待需求，对待业务有很强的责任心
         </p>
         <p class="about-item">
-          有团队小组长管理经验，熟悉整个项目开发流程，曾带领3~4人从0到1完成整个ToB项目开发；
-          有前端性能优化经验，完成项目性能优化指标，国内1s国外3s达标率93%；
-          有前端安问题全整改经验，在项目中完成安全整改并满足安全送检需求。如XSS、CSRF、不安全的依赖库、敏感信息泄露等；
-          有丰富的模块化、组件化、hooks使用经验；
-          有ToB、ToC，大屏数据可视化、电子流等项目经验，同时了解小程序开发模式，能迅速上手开发；
-          对易用性和用户体验有自己的经验积累，在项目中对易用性和用户体验进行整改后，用户满意度提升20%；
-          了解Java，MySQL等后端技术，曾有后端开发经验；
+          具有丰富的项目经验和技术专长，擅长团队管理、前端性能优化、安全整改、模块化、组件化和hooks开发，以及丰富的图形可视化经验，
+          对易用性和用户体验有自己的经验积累，曾参与ToB、ToC，大屏可视化、电子流等项目开发，熟悉小程序开发模式，
+          能够迅速上手开发各种类型的项目，同时了解Java，MySQL等后端技术，曾有后端开发经验
         </p>
       </div>
       <div class="basic-info wow fadeInUp">
@@ -32,7 +28,7 @@
             </el-col>
             <el-col :span="12">
               <el-form-item label="电话号码：">
-                <span>18008044071</span>
+                <span>{{ handlePhoneHide('18008044071') }}</span>
               </el-form-item>
             </el-col>
           </el-row>
@@ -63,7 +59,7 @@
           <el-row :gutter="20">
             <el-col :span="12">
               <el-form-item label="邮箱：">
-                <span>903803024@qq.com</span>
+                <span>{{ handleEmailHide('903803024@qq.com') }}</span>
               </el-form-item>
             </el-col>
             <el-col :span="12">
@@ -75,17 +71,18 @@
           <el-row :gutter="20">
             <el-col :span="12">
               <el-form-item label="微信小程序：">
-                <span>JyLiu</span>
+                <el-tooltip
+                  :content="tooltipContent"
+                  raw-content
+                  placement="top"
+                  effect="light"
+                >
+                  <a style="cursor: pointer; color: #2785ff;">JyLiu</a>
+                </el-tooltip>
               </el-form-item>
             </el-col>
           </el-row>
         </ElForm>
-
-        <img
-          class="wx-mini-program wow fadeInRight"
-          :src="wxMiniProgram"
-          alt="wx-mini-program"
-        />
       </div>
     </div>
   </section>
@@ -94,11 +91,20 @@
   import { ref } from 'vue';
   import aboutMe from '@/assets/images/aboutMe.jpg';
   import wxMiniProgram from '@/assets/images/wx-mini-program.jpg';
+  import { handlePhoneHide, handleEmailHide } from '@/utils/commonUitls';
 
   const formData = ref({
     birthDay: '1993-01-03',
     phone: '18008044071'
   });
+
+  const tooltipContent = `
+    <img
+          style="width: 10rem; height: 10rem; object-fit: cover;"
+          src="${wxMiniProgram}"
+          alt="wx-mini-program"
+        />
+  `
 </script>
 
 <style scoped lang="less">
@@ -136,14 +142,6 @@
       }
       .basic-info {
         position: relative;
-        .wx-mini-program {
-          position: absolute;
-          bottom: -8rem;
-          right: 0;
-          width: 10rem;
-          height: 10rem;
-          object-fit: cover;
-        }
       }
       .basic-info-title {
         border-top: 1px solid #cccccc;

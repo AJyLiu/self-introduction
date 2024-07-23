@@ -7,13 +7,16 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BackTop: typeof import('./src/components/backTop/index.vue')['default']
     DigitalCard: typeof import('./src/components/digitalCard/index.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElProgress: typeof import('element-plus/es')['ElProgress']
     ElRow: typeof import('element-plus/es')['ElRow']
+    ElTooltip: typeof import('element-plus/es')['ElTooltip']
     ExperienceItem: typeof import('./src/components/experienceItem/index.vue')['default']
     Header: typeof import('./src/components/header/index.vue')['default']
     Menu: typeof import('./src/components/menu/index.vue')['default']

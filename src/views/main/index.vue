@@ -5,8 +5,10 @@
   <About id="about"></About>
   <Experience id="experience"></Experience>
   <Project id="project"></Project>
-  <JobScope></JobScope>
-  <MyLeisureLife></MyLeisureLife>
+  <JobScope id="job-scope"></JobScope>
+  <MyLeisureLife id="leisure-life"></MyLeisureLife>
+  <Footer></Footer>
+  <BackTop></BackTop>
 </template>
 <script setup lang="ts">
   import { ref } from 'vue';
@@ -17,8 +19,9 @@
   import SpecialRow from './SpecialRow.vue';
   import JobScope from '@/views/jobScope/index.vue';
   import MyLeisureLife from '@/views/myleisurelife/index.vue';
+  import Footer from '@/views/footer/index.vue';
 
-  const ids = ref(['home', 'about', 'experience', 'project']);
+  const ids = ref(['home', 'about', 'experience', 'project', 'job-scope', 'leisure-life']);
   const menuClick = (index: number) => {
     const dom = document.getElementById(ids.value[index]);
     if (dom) {
