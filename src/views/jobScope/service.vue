@@ -23,6 +23,8 @@
     padding: 2rem;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 0.5rem 0;
+    box-sizing: border-box;
     .card-icon {
       width: 2.5rem;
       height: 2.5rem;
@@ -45,6 +47,11 @@
     }
     .desc {
       color: #ffffff8f;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .service-card {
+      width: 100%;
     }
   }
 </style>

@@ -7,7 +7,7 @@
           一个前端开发<span class="job prominent">工程师</span>
         </div>
         <div class="text-item desc wow fadeInUp">
-          喜欢钓鱼，爱好羽毛球，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，爱倒腾的前端选手
+          爱好垂钓、羽毛球、摄影，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，一个爱倒腾的前端选手
         </div>
         <div class="wow fadeInLeft">
           <a :href="cvUrl" class="yellow_btn" target="_blank">下载简历</a>
@@ -110,10 +110,17 @@
       }
     }
   }
-
+  
   @media screen and (max-width: 1199px) {
+    .container {
+      height: calc(100vh - 11rem);
+      margin: 0 1rem;
+    }
     .container-img {
       display: none;
+    }
+    .text-content {
+      width: 80% !important;
     }
   }
 </style>

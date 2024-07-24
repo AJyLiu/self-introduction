@@ -2,7 +2,7 @@
   <section class="layout">
     <div class="mian-container header-box wow fadeInUp">
       <h1>业余生活</h1>
-      <h5>丰富的业余生活，如垂钓、羽毛球、手工、旅行等</h5>
+      <h5>丰富的业余生活，如垂钓、羽毛球、摄影、爱倒腾</h5>
     </div>
     <SwiperPic class="wow fadeInUp"></SwiperPic>
     <MapChart class="wow fadeInUp"></MapChart>
@@ -25,6 +25,11 @@
     h5 {
       font-weight: 100;
       margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .header-box {
+        width: 100%;
     }
   }
 </style>

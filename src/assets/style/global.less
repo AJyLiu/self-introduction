@@ -7,7 +7,7 @@
 @borderColor: #d8d7d7;
 @bgColor: #F6F7FD;
 
-body {
+body, #app {
     overflow-x: hidden;
 }
 
@@ -55,10 +55,16 @@ ul li, menu li {
     .mian-container {
         max-width: 540px;    
     }
+    .layout-bg {
+        padding: 0 1rem;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
    .mian-container {
         max-width: 720px;
+    }
+    .layout-bg {
+        padding: 0 1rem;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {

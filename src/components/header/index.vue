@@ -8,10 +8,11 @@
       <Menu @menu-click="menuClick" />
       <a class="btn" @click="openSignIn"> Sign in </a>
     </div>
+    
+    <ElDrawer v-model="isOpenSignIn" :with-header="false" :destroy-on-close="true" class="no-padding-drawer" size="100%">
+      <SignIn @sign-in="handleSignIn"></SignIn>
+    </ElDrawer>
   </header>
-  <ElDrawer v-model="isOpenSignIn" :with-header="false" :destroy-on-close="true" class="no-padding-drawer" size="100%">
-    <SignIn @sign-in="handleSignIn"></SignIn>
-  </ElDrawer>
 </template>
 
 <script setup lang="ts">

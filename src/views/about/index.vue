@@ -19,57 +19,57 @@
       </div>
       <div class="basic-info wow fadeInUp">
         <h1 class="title basic-info-title">Basic Info</h1>
-        <ElForm :model="formData" label-width="120px">
+        <ElForm :model="formData" label-width="120px" style="padding-top: 0.7rem;">
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="出生日期：">
                 <span>1993-01-03</span>
               </el-form-item>
             </el-col>
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="电话号码：">
                 <span>{{ handlePhoneHide('18008044071') }}</span>
               </el-form-item>
             </el-col>
           </el-row>
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="毕业院校：">
                 <span>攀枝花学院</span>
               </el-form-item>
             </el-col>
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="院校类别：">
                 <span>普通全日制</span>
               </el-form-item>
             </el-col>
           </el-row>
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="专业：">
                 <span>软件工程</span>
               </el-form-item>
             </el-col>
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="学历：">
                 <span>本科</span>
               </el-form-item>
             </el-col>
           </el-row>
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="邮箱：">
                 <span>{{ handleEmailHide('903803024@qq.com') }}</span>
               </el-form-item>
             </el-col>
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="地址：">
                 <span>四川省成都市</span>
               </el-form-item>
             </el-col>
           </el-row>
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :xs="24" :sm="12">
               <el-form-item label="微信小程序：">
                 <el-tooltip
                   :content="tooltipContent"
@@ -124,21 +124,21 @@
     }
     .text-box {
       flex: 1;
-      padding: 0 30px;
-      font-size: 16px;
+      padding: 0 2rem;
+      font-size: 1rem;
       color: @textColor;
       overflow: visible;
       .title {
         color: @titleColor;
-        font-size: 28px;
+        font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 0.8rem;
       }
       .about-item {
-        padding: 10px 0;
+        padding: 0.7rem 0;
       }
       .about-item:last-child {
-        padding-bottom: 20px;
+        padding-bottom: 2rem;
       }
       .basic-info {
         position: relative;
@@ -152,9 +152,20 @@
       color: #000;
     }
   }
-  @media screen and (min-width: 992px) and (max-width: 1320px) {
+  @media screen and (max-width: 1199px) {
     .about-me {
       padding: 80px 20px;
+      flex-direction: column;
+      .img-box {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+      .text-box {
+        padding: 0 1rem;
+        .title {
+          text-align: center;
+        }
+      }
     }
   }
 </style>

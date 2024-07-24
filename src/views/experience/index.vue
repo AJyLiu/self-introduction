@@ -1,36 +1,39 @@
 <template>
-  <section class="layout-bg">
-    <div class="header-box wow fadeInUp">
-      <h1>我的经历</h1>
-      <h5>
-        工作经历丰富，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，技术面涉及广泛
-      </h5>
-    </div>
-    <div class="mian-container experience-box">
-      <div class="item-box experience">
-        <h1 class="title wow fadeInUp">工作经历</h1>
-        <ExperienceItem
-          v-for="(item, index) in experienceList"
-          :key="item.id"
-          :num="index + 1"
-          :experience-data="item"
-        ></ExperienceItem>
+  <div>
+    <section class="layout-bg">
+      <div class="header-box wow fadeInUp">
+        <h1>我的经历</h1>
+        <h5>
+          工作经历丰富，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，技术面涉及广泛
+        </h5>
       </div>
-      <div class="item-box skills">
-        <h1 class="title wow fadeInUp">专业技能</h1>
-        <SkillItem
-          v-for="item in skillList"
-          :key="item.name"
-          :skill-data="item"
-        ></SkillItem>
+      <div class="mian-container experience-box">
+        <div class="item-box experience">
+          <h1 class="title wow fadeInUp">工作经历</h1>
+          <ExperienceItem
+            v-for="(item, index) in experienceList"
+            :key="item.id"
+            :num="index + 1"
+            :experience-data="item"
+          ></ExperienceItem>
+        </div>
+        <div class="item-box skills">
+          <h1 class="title wow fadeInUp">专业技能</h1>
+          <SkillItem
+            v-for="item in skillList"
+            :key="item.name"
+            :skill-data="item"
+          ></SkillItem>
+        </div>
       </div>
-    </div>
-  </section>
-  <section ref="targetRef" class="layout-bg">
-    <div class="mian-container chart-container wow fadeInUp">
-      <div id="workChart" style="width: 100%; height: 30rem"></div>
-    </div>
-  </section>
+    </section>
+    <section ref="targetRef" class="layout-bg">
+      <div class="mian-container chart-container wow fadeInUp">
+        <div id="workChart" style="width: 100%; height: 30rem"></div>
+      </div>
+    </section>
+  </div>
+  
 </template>
 
 <script setup lang="ts">
@@ -78,10 +81,14 @@
         }
       },
       calculable: true,
+      grid: {
+        left: '12%' ,
+      },
       xAxis: [
         {
           type: 'category',
           boundaryGap: false,
+          show: false,
           data: xAxis.value
         }
       ],
@@ -169,5 +176,21 @@
   }
   .chart-container {
     padding-top: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .header-box {
+      width: 100%;
+    }
+    .experience-box {
+      flex-direction: column;
+      .item-box {
+        width: 100%;
+      }
+      .skills {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
   }
 </style>

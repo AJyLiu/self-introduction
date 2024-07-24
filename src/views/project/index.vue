@@ -40,4 +40,12 @@
       font-weight: 100;
     }
   }
+
+  @media screen and (max-width: 1199px) {
+    .project {
+      .project-title-desc {
+        width: 100%;
+      }
+    }
+  }
 </style>

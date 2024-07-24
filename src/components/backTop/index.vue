@@ -85,4 +85,9 @@ onUnmounted(() => {
         z-index: -1;
         background-color: @prominent-color;
     }
+    @media screen and (max-width: 1199px) {
+        .back-top {
+            right: 1rem;
+        }
+    }
 </style>

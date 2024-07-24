@@ -1,5 +1,5 @@
 <template>
-  <div id="map" style="height: 40rem; width: 100%; margin: 0 auto"></div>
+  <div id="map" class="map-chart"></div>
 </template>
 
 <script setup lang="ts">
@@ -124,4 +124,15 @@
   });
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+    .map-chart {
+        height: 40rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1199px) {
+        .map-chart {
+            height: 30rem;
+        }
+    }
+</style>

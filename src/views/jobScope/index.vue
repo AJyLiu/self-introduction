@@ -2,7 +2,7 @@
   <section class="layout-bg">
     <div class="mian-container job-scope">
       <div class="header-box wow fadeInUp">
-        <h1>服务</h1>
+        <h1>业务</h1>
         <h5>
           主要涉及三大模块开发，web端toC、toB项目，H5页面开发，小程序应用开发
         </h5>
@@ -51,6 +51,16 @@
       margin-top: 3rem;
       display: flex;
       justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .job-scope {
+      .header-box {
+        width: 100%;
+      }
+      .service-list {
+        flex-direction: column;
+      }
     }
   }
 </style>
