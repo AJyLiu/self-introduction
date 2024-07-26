@@ -1,11 +1,11 @@
 <template>
   <section class="mian-container about-me">
     <div class="img-box wow fadeInLeft">
-      <img :src="aboutMe" class="about-me-img" alt="aboutMe" />
+      <img v-lazy="aboutMe" class="about-me-img" alt="aboutMe" />
     </div>
     <div class="text-box">
       <div class="wow fadeInUp">
-        <h1 class="title">About Me</h1>
+        <h1 class="title">关于我</h1>
         <p class="about-item">
           为人诚恳、乐观向上、拥有较强的组织能力和适应能力,
           富有团队精神和团队意识，对 IT 事业有向往，热衷前端开发技术,
@@ -18,8 +18,12 @@
         </p>
       </div>
       <div class="basic-info wow fadeInUp">
-        <h1 class="title basic-info-title">Basic Info</h1>
-        <ElForm :model="formData" label-width="120px" style="padding-top: 0.7rem;">
+        <h1 class="title basic-info-title">基本信息</h1>
+        <ElForm
+          :model="formData"
+          label-width="120px"
+          style="padding-top: 0.7rem"
+        >
           <el-row :gutter="20">
             <el-col :xs="24" :sm="12">
               <el-form-item label="出生日期：">
@@ -77,7 +81,7 @@
                   placement="top"
                   effect="light"
                 >
-                  <a style="cursor: pointer; color: #2785ff;">JyLiu</a>
+                  <a style="cursor: pointer; color: #2785ff">JyLiu</a>
                 </el-tooltip>
               </el-form-item>
             </el-col>
@@ -104,7 +108,7 @@
           src="${wxMiniProgram}"
           alt="wx-mini-program"
         />
-  `
+  `;
 </script>
 
 <style scoped lang="less">

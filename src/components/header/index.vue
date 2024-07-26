@@ -8,15 +8,21 @@
       <Menu @menu-click="menuClick" />
       <a class="btn" @click="openSignIn"> Sign in </a>
     </div>
-    
-    <ElDrawer v-model="isOpenSignIn" :with-header="false" :destroy-on-close="true" class="no-padding-drawer" size="100%">
+
+    <ElDrawer
+      v-model="isOpenSignIn"
+      :with-header="false"
+      :destroy-on-close="true"
+      class="no-padding-drawer"
+      size="100%"
+    >
       <SignIn @sign-in="handleSignIn"></SignIn>
     </ElDrawer>
   </header>
 </template>
 
 <script setup lang="ts">
-  import { ref, defineEmits } from 'vue';
+  import { ref } from 'vue';
   import logo from '@/assets/images/logo.png';
 
   const emit = defineEmits(['menu-click']);
@@ -25,11 +31,11 @@
 
   const openSignIn = () => {
     isOpenSignIn.value = true;
-  }
+  };
 
   const handleSignIn = () => {
     isOpenSignIn.value = false;
-  }
+  };
 
   const menuClick = (index: number) => {
     emit('menu-click', index);

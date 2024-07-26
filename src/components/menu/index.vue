@@ -16,7 +16,7 @@
       v-for="(item, index) in menuList"
       class="menu-item"
       :key="index"
-      :class="{ 'active': activeIndex === index }"
+      :class="{ active: activeIndex === index }"
       @click="handleClick(index)"
     >
       {{ item }}
@@ -38,7 +38,7 @@
           v-for="(item, index) in menuList"
           class="menu-item"
           :key="index"
-          :class="{ 'active': activeIndex === index }"
+          :class="{ active: activeIndex === index }"
           @click="handleClickPhoneMenu(index)"
         >
           {{ item }}
@@ -46,24 +46,16 @@
       </menu>
     </div>
   </transition>
- 
 </template>
 
 <script setup lang="ts">
-import { debounce } from '@/utils/commonUitls';
-import { ref, defineEmits, onMounted, onUnmounted } from 'vue';
+  import { debounce } from '@/utils/commonUitls';
+  import { ref, onMounted, onUnmounted } from 'vue';
 
   const emit = defineEmits(['menu-click']);
 
   const isShowMenu = ref(false);
-  const menuList = ref([
-    '首页',
-    '关于我',
-    '经历',
-    '项目',
-    '业务',
-    '业余生活'
-  ]);
+  const menuList = ref(['首页', '关于我', '经历', '项目', '业务', '业余生活']);
   const activeIndex = ref<number>(0);
 
   const handleClick = (index: number) => {
@@ -92,21 +84,21 @@ import { ref, defineEmits, onMounted, onUnmounted } from 'vue';
     const offsetTop: number[] = [];
 
     navContents.forEach((item: any) => {
-      offsetTop.push(item.offsetTop as number - windowHeight / 2) // 滑动到浏览器中间位置时
-    })
+      offsetTop.push((item.offsetTop as number) - windowHeight / 2); // 滑动到浏览器中间位置时
+    });
 
     offsetTop.forEach((item, index) => {
-      activeIndex.value  = currentOffsetTop >= item ? index : activeIndex.value
+      activeIndex.value = currentOffsetTop >= item ? index : activeIndex.value;
     });
-}
+  };
 
-onMounted(() => {
+  onMounted(() => {
     document.addEventListener('scroll', debounce(handleScroll, 400));
-})
+  });
 
-onUnmounted(() => {
+  onUnmounted(() => {
     document?.removeEventListener('scroll', debounce(handleScroll, 400));
-})
+  });
 </script>
 
 <style scoped lang="less">

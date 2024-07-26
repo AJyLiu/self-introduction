@@ -21,7 +21,14 @@
   import MyLeisureLife from '@/views/myleisurelife/index.vue';
   import Footer from '@/views/footer/index.vue';
 
-  const ids = ref(['home', 'about', 'experience-page', 'project', 'job-scope', 'leisure-life']);
+  const ids = ref([
+    'home',
+    'about',
+    'experience-page',
+    'project',
+    'job-scope',
+    'leisure-life'
+  ]);
   const menuClick = (index: number) => {
     const dom = document.getElementById(ids.value[index]);
     if (dom) {

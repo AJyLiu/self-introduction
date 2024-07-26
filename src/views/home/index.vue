@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="container-img">
-      <img :src="photo" class="photo" alt="logo" />
+      <img v-lazy-load="photo" class="photo" alt="logo" />
     </div>
   </section>
 </template>
@@ -110,7 +110,7 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 1199px) {
     .container {
       height: calc(100vh - 11rem);

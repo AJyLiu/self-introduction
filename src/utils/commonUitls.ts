@@ -45,7 +45,7 @@ export const handleEmailHide = (email: string): string => {
 };
 
 // 防抖
-export const debounce = (fn: Function, delay: number) => {
+export const debounce = (fn: (...args: any) => void, delay: number) => {
   let timeoutId: number | null = null;
   return function (...args: any) {
     if (timeoutId !== null) {

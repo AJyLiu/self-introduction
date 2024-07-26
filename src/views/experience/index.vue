@@ -4,7 +4,7 @@
       <div class="header-box wow fadeInUp">
         <h1>我的经历</h1>
         <h5>
-          工作经历丰富，待过小型创业公司，潜力型创业公司，小公司和大型外包公司，技术面涉及广泛
+          待过小型创业公司，潜力型创业公司，小公司和大型外包公司，技术面涉及广泛
         </h5>
       </div>
       <div class="mian-container experience-box">
@@ -33,7 +33,6 @@
       </div>
     </section>
   </div>
-  
 </template>
 
 <script setup lang="ts">
@@ -82,7 +81,7 @@
       },
       calculable: true,
       grid: {
-        left: '12%' ,
+        left: '12%'
       },
       xAxis: [
         {

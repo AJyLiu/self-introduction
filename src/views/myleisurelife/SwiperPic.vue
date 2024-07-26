@@ -26,10 +26,10 @@
       <swiper-slide
         v-for="(item, i) in state.banner"
         :key="i"
-        style="background-color: aquamarine"
+        style="background-color: #f6f7fd"
       >
         <img
-          :src="item.url"
+          v-lazy-load="item.url"
           style="width: 100%; height: 100%; object-fit: cover"
         />
       </swiper-slide>
@@ -106,13 +106,19 @@
 
   @media screen and (max-width: 768px) {
     .swiper-container {
-      height: 7rem;
+      height: 8rem;
     }
   }
 
   @media screen and (min-width: 768px) {
     .swiper-container {
-      height: 8rem;
+      height: 12rem;
+    }
+  }
+
+  @media screen and (min-width: 1199px) {
+    .swiper-container {
+      height: 16rem;
     }
   }
 

@@ -125,14 +125,14 @@
 </script>
 
 <style scoped lang="less">
+  .map-chart {
+    height: 40rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1199px) {
     .map-chart {
-        height: 40rem;
-        width: 100%;
-        margin: 0 auto;
+      height: 30rem;
     }
-    @media screen and (max-width: 1199px) {
-        .map-chart {
-            height: 30rem;
-        }
-    }
+  }
 </style>

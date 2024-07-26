@@ -4,8 +4,8 @@
       <h1>业余生活</h1>
       <h5>丰富的业余生活，如垂钓、羽毛球、摄影、爱倒腾</h5>
     </div>
-    <SwiperPic class="wow fadeInUp"></SwiperPic>
-    <MapChart class="wow fadeInUp"></MapChart>
+    <SwiperPic></SwiperPic>
+    <MapChart></MapChart>
   </section>
 </template>
 
@@ -29,7 +29,7 @@
   }
   @media screen and (max-width: 1199px) {
     .header-box {
-        width: 100%;
+      width: 100%;
     }
   }
 </style>

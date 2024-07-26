@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import viteCompression from 'vite-plugin-compression'
+import viteImagemin from 'vite-plugin-imagemin'
  
 export default defineConfig({
   base: './',
@@ -29,7 +30,34 @@ export default defineConfig({
       threshold: 5120, // 压缩前最小文件大小
       algorithm: 'gzip', // 压缩算法
       ext: '.gz' // 文件类型
-    }) 
+    }),
+    viteImagemin({
+      gifsicle: {
+          optimizationLevel: 7,
+          interlaced: false
+        },
+        optipng: {
+          optimizationLevel: 7
+        },
+        mozjpeg: {
+          quality: 20
+        },
+        pngquant: {
+          quality: [0.8, 0.9],
+          speed: 4
+        },
+        svgo:{
+          plugins: [
+            {
+              name: 'removeViewBox'
+            },
+            {
+              name: 'removeEmptyAttrs',
+              active: false
+            }
+          ]
+        }
+    })
   ],
   // 打包配置
   build: {

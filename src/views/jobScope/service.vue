@@ -17,13 +17,13 @@
 
 <style scoped lang="less">
   .service-card {
-    width: 19rem;
+    width: 100%;
     border-radius: 0.5rem;
     text-align: center;
     padding: 2rem;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     box-sizing: border-box;
     .card-icon {
       width: 2.5rem;

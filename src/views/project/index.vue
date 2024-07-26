@@ -4,7 +4,7 @@
       <div class="wow fadeInUp">
         <h4 class="project-title">我的项目经验</h4>
         <h3 class="project-title-desc">
-          丰富的项目经验且涉及面广泛，如医疗、金融、大屏、小程序、学习考试、培训、环保、外贸、海外项目等
+          项目经验涉及面广泛，如医疗、金融、企业、可视化大屏、小程序、学习、培训、考试、海外项目等
         </h3>
       </div>
 

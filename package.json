@@ -20,8 +20,10 @@
     "less": "^4.2.0",
     "swiper": "^11.1.4",
     "terser": "^5.31.3",
+    "vite-plugin-imagemin": "^0.6.1",
     "vue": "^3.4.29",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.4.0",
+    "vue3-lazy": "^1.0.0-alpha.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
