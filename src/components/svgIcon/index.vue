@@ -1,5 +1,5 @@
 <template>
-  <svg :class="class">
+  <svg :class="iconClass">
     <use
       :xlink:href="prefix + name"
       rel="external nofollow"
@@ -19,19 +19,10 @@
       type: String,
       default: '#000'
     },
-    width: {
+    iconClass: {
       type: String,
-      default: '16px'
-    },
-    height: {
-      type: String,
-      default: '16px'
-    },
-    class: {
-        type: String,
-        default: '',
+      default: ''
     }
-
   });
 </script>
 <style lang="scss" scoped></style>

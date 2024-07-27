@@ -53,10 +53,10 @@
   const skillList = ref<SkillInfoVo[]>(skillData.slice(0, 5));
 
   const xAxis = useGetChartXData();
-  let seriesData = ref<string[]>([]);
+  const seriesData = ref<string[]>([]);
 
   const initEchart = () => {
-    seriesData = useGetWorkYears();
+    seriesData.value = useGetWorkYears();
     const chartDom = document.getElementById('workChart');
     const chart = echarts.init(chartDom);
     const options: EchartsOption = {

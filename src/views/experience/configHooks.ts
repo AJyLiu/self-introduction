@@ -19,10 +19,10 @@ export const useGetChartXData = (): Ref<string[]> => {
   return ySearice;
 };
 
-export const useGetWorkYears = (): Ref<string[]> => {
+export const useGetWorkYears = (): string[] => {
   const workYears = ref<string[]>([]);
   workYears.value = getExperienceData().map((item) => {
     return (getMonthDifference(item.startTime, item.endTime) / 12).toFixed(1);
   });
-  return workYears;
+  return workYears.value;
 };

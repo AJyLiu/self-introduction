@@ -1,9 +1,13 @@
 <template>
   <section class="container wow fadeIn">
     <div class="container-text">
-      <SvgIcon name="cloud" class="cloud-icon" color="#c9f31d09"></SvgIcon>
-      <SvgIcon name="shark" class="shark-icon" color="#c9f31d09"></SvgIcon>
-      <SvgIcon name="fishing" class="fish-icon" color="#c9f31d10"></SvgIcon>
+      <SvgIcon name="cloud" icon-class="cloud-icon" color="#c9f31d09"></SvgIcon>
+      <SvgIcon name="shark" icon-class="shark-icon" color="#c9f31d09"></SvgIcon>
+      <SvgIcon
+        name="fishing"
+        icon-class="fish-icon"
+        color="#c9f31d10"
+      ></SvgIcon>
       <div class="text-content">
         <div class="text-item name wow fadeInUp">你好我是刘先生!</div>
         <div class="text-item job wow fadeInDown">
