@@ -16,7 +16,7 @@
       class="no-padding-drawer"
       size="100%"
     >
-      <SignIn @sign-in="handleSignIn"></SignIn>
+      <SignIn @sign-in="handleSignIn" @sign-out="bandleSignOut"></SignIn>
     </ElDrawer>
   </header>
 </template>
@@ -34,6 +34,10 @@
   };
 
   const handleSignIn = () => {
+    isOpenSignIn.value = false;
+  };
+
+  const bandleSignOut = () => {
     isOpenSignIn.value = false;
   };
 

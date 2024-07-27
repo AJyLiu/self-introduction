@@ -9,7 +9,7 @@
         color="#c9f31d10"
       ></SvgIcon>
       <div class="text-content">
-        <div class="text-item name wow fadeInUp">你好我是刘先生!</div>
+        <div class="text-item name wow fadeInUp">你好，我是刘先生!</div>
         <div class="text-item job wow fadeInDown">
           一个前端开发<span class="job prominent">工程师</span>
         </div>
