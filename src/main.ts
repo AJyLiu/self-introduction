@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router'; // 注册路由
 import VueLazy from 'vue3-lazy';
 import registerDirectives from './directive/index';
+import 'virtual:svg-icons-register';
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import 'swiper/css';

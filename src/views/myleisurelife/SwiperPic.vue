@@ -53,6 +53,10 @@
   import pic5 from '@/assets/images/myPhoto/psc5.jpg';
   import pic6 from '@/assets/images/myPhoto/psc6.jpg';
   import pic7 from '@/assets/images/myPhoto/psc7.jpg';
+  import pic8 from '@/assets/images/myPhoto/psc8.jpg';
+  import pic9 from '@/assets/images/myPhoto/psc9.jpg';
+  import pic10 from '@/assets/images/myPhoto/psc10.jpg';
+  import pic11 from '@/assets/images/myPhoto/psc11.jpg';
 
   import 'swiper/css';
   import 'swiper/css/navigation';
@@ -61,10 +65,16 @@
   const state = reactive({
     banner: [
       {
-        url: pic1
+        url: pic8
       },
       {
-        url: pic2
+        url: pic9
+      },
+      {
+        url: pic10
+      },
+      {
+        url: pic11
       },
       {
         url: pic3
@@ -73,13 +83,19 @@
         url: pic4
       },
       {
-        url: pic5
-      },
-      {
         url: pic6
       },
       {
         url: pic7
+      },
+      {
+        url: pic2
+      },
+      {
+        url: pic1
+      },
+      {
+        url: pic5
       }
     ]
   });

@@ -6,6 +6,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import viteCompression from 'vite-plugin-compression'
 import viteImagemin from 'vite-plugin-imagemin'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
  
 export default defineConfig({
   base: './',
@@ -33,30 +34,34 @@ export default defineConfig({
     }),
     viteImagemin({
       gifsicle: {
-          optimizationLevel: 7,
-          interlaced: false
-        },
-        optipng: {
-          optimizationLevel: 7
-        },
-        mozjpeg: {
-          quality: 20
-        },
-        pngquant: {
-          quality: [0.8, 0.9],
-          speed: 4
-        },
-        svgo:{
-          plugins: [
-            {
-              name: 'removeViewBox'
-            },
-            {
-              name: 'removeEmptyAttrs',
-              active: false
-            }
-          ]
-        }
+        optimizationLevel: 7,
+        interlaced: false
+      },
+      optipng: {
+        optimizationLevel: 7
+      },
+      mozjpeg: {
+        quality: 20
+      },
+      pngquant: {
+        quality: [0.8, 0.9],
+        speed: 4
+      },
+      svgo:{
+        plugins: [
+          {
+            name: 'removeViewBox'
+          },
+          {
+            name: 'removeEmptyAttrs',
+            active: false
+          }
+        ]
+      }
+    }),
+    createSvgIconsPlugin({
+      iconDirs: [resolve(__dirname, 'src/assets/svg')],
+      symbolId: 'icon-[dir]-[name]' ,
     })
   ],
   // 打包配置

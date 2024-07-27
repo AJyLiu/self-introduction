@@ -1,6 +1,9 @@
 <template>
   <section class="container wow fadeIn">
     <div class="container-text">
+      <SvgIcon name="cloud" class="cloud-icon" color="#c9f31d09"></SvgIcon>
+      <SvgIcon name="shark" class="shark-icon" color="#c9f31d09"></SvgIcon>
+      <SvgIcon name="fishing" class="fish-icon" color="#c9f31d10"></SvgIcon>
       <div class="text-content">
         <div class="text-item name wow fadeInUp">你好我是刘先生!</div>
         <div class="text-item job wow fadeInDown">
@@ -35,6 +38,30 @@
     margin-bottom: 0.9rem;
     box-sizing: border-box;
     margin: 0 1.5rem;
+    position: relative;
+    .cloud-icon {
+      position: absolute;
+      top: -9rem;
+      left: -7rem;
+      transform: rotate(130deg);
+      width: 26rem;
+      height: 26rem;
+    }
+    .shark-icon {
+      position: absolute;
+      bottom: -7rem;
+      left: -2rem;
+      width: 16rem;
+      height: 16rem;
+      transform: rotate(-30deg);
+    }
+    .fish-icon {
+      position: absolute;
+      bottom: -9rem;
+      right: 35.5rem;
+      width: 36rem;
+      height: 36rem;
+    }
     .container-text {
       flex: 1;
       background-color: @main-color;
@@ -44,6 +71,7 @@
       align-items: center;
       .text-content {
         width: 50%;
+        position: relative;
         .text-item {
           margin-bottom: 2rem;
         }
@@ -110,11 +138,38 @@
       }
     }
   }
-
+  @media screen and (max-width: 1523px) {
+    .container {
+      .fish-icon {
+        width: 27rem;
+        height: 27rem;
+        right: 36rem;
+        bottom: -7rem;
+      }
+    }
+  }
   @media screen and (max-width: 1199px) {
     .container {
       height: calc(100vh - 11rem);
       margin: 0 1rem;
+      .cloud-icon {
+        width: 10rem;
+        height: 10rem;
+        top: -4rem;
+        left: -3rem;
+      }
+      .shark-icon {
+        width: 6rem;
+        height: 6rem;
+        bottom: -2rem;
+        left: -1rem;
+      }
+      .fish-icon {
+        width: 20rem;
+        height: 20rem;
+        right: -2rem;
+        bottom: -5rem;
+      }
     }
     .container-img {
       display: none;
