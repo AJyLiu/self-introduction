@@ -55,10 +55,22 @@
   const emit = defineEmits(['menu-click']);
 
   const isShowMenu = ref(false);
-  const menuList = ref(['首页', '关于我', '经历', '项目', '业务', '业余生活']);
+  const menuList = ref([
+    '首页',
+    '关于我',
+    '经历',
+    '项目',
+    '业务',
+    '业余生活',
+    '博客'
+  ]);
   const activeIndex = ref<number>(0);
 
   const handleClick = (index: number) => {
+    if (index === 6) {
+      window.open('http://47.109.58.86/');
+      return;
+    }
     activeIndex.value = index;
     emit('menu-click', index);
   };

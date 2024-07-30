@@ -217,7 +217,7 @@
         justify-content: center;
         margin: 1rem;
         font-weight: 100;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
       .forgot-password {
         font-size: 0.8rem;
