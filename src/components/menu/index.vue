@@ -68,7 +68,7 @@
 
   const handleClick = (index: number) => {
     if (index === 6) {
-      window.open('http://47.109.58.86/');
+      window.open('http://blog.liujunyao.cn/');
       return;
     }
     activeIndex.value = index;
