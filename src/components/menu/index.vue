@@ -76,6 +76,10 @@
   };
 
   const handleClickPhoneMenu = (index: number) => {
+    if (index === 6) {
+      window.open('http://blog.liujunyao.cn/');
+      return;
+    }
     activeIndex.value = index;
     closeMenu();
     emit('menu-click', index);
